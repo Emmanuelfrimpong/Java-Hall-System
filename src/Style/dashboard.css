@@ -1,0 +1,45 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: transparent;
+
+}
+.pane{
+    -fx-background-color: #CD8500;
+    -fx-background-radius:8;
+}
+.Hb{
+    -fx-background-color: rgba(255, 255, 255, .7);
+    -fx-background-radius:5;
+}
+.HbButtons{
+    -fx-background-color: #3D9140;
+    -fx-background-radius:10;
+}
+.HbButtons:hover{
+    -fx-background-color: white;
+    -fx-background-radius:10;
+    -fx-border-color: #CD8500;
+    -fx-border-width: 3;
+    -fx-border-radius: 10;
+}
+.HbButtons:pressed{
+     -fx-background-color: white;
+    -fx-background-radius:10;
+    -fx-border-color: #CD8500;
+    -fx-border-width: 3;
+    -fx-border-radius: 10;
+    -fx-rotate: 15; 
+}
+.mainText{
+    -fx-text-fill: #CD8500;
+    -fx-font-weight:bold;
+    -fx-font-size:40;
+}
+.smallText{
+    -fx-text-fill:  #ffffff;
+    -fx-font-weight:bold;
+    -fx-font-size:17;
+}

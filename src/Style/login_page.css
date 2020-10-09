@@ -1,0 +1,20 @@
+.root{
+  -fx-background-color: rgba(255, 255, 255, .5);
+   -fx-background-radius:10;
+   -fx-border-radius:10;
+   -fx-border-width:4;
+   
+}
+.top_pan{
+   -fx-background-color:#975800; 
+}
+.bottom_pane{
+    -fx-background-color:#E5E4E2; 
+}
+.center_pane{
+    -fx-background-color: rgba(255, 255, 255, .3);
+}
+.container{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:5;
+}

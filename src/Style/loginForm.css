@@ -1,0 +1,29 @@
+
+.textfield{
+     -fx-background-color:#FFFFFF;
+    -fx-background-radius:5;
+}
+
+.inputText{
+     -fx-font-size:18;
+      -fx-font-weight:bold;
+}
+
+.Button{
+    -fx-font-weight:bold;
+    -fx-font-size:18;
+   -fx-background-color: #006214;
+   -fx-text-fill:  #ffffff;
+   -fx-background-radius:10;
+}
+.button:hover{
+    -fx-font-weight:bold;
+    -fx-font-size:18;
+   -fx-background-color: #ffffff;
+   -fx-text-fill:  #006214;
+   -fx-background-radius:10;
+   -fx-border-color: #006214;
+   -fx-border-width: 3;
+   -fx-border-radius: 10;
+    
+}

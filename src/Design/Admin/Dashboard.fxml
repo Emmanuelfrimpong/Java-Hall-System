@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="1160.0" styleClass="mainFxmlClass" stylesheets="@../../Style/dashboard.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controllers.Admin.DashboardController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="738.0" prefWidth="1217.0">
+               <children>
+                  <HBox prefHeight="127.0" prefWidth="1444.0" styleClass="pane">
+                     <children>
+                        <Pane prefHeight="153.0" prefWidth="1349.0" stylesheets="@../../Style/dashboard.css">
+                           <children>
+                              <ImageView fitHeight="95.0" fitWidth="95.0" layoutX="27.0" layoutY="13.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../Images/image.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#3d9140" layoutX="147.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AUTONOMY HALL">
+                                 <font>
+                                    <Font name="Arial Bold" size="54.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow offsetX="4.0" offsetY="4.0" />
+                                 </effect>
+                              </Text>
+                              <Text fill="WHITE" layoutX="147.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMINISTRATOR">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="31.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ImageView fx:id="btn_minimize" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../Images/icons8_minimize_window_26px.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                              <ImageView fx:id="btn_close" fitHeight="30.0" fitWidth="28.0" layoutX="18.0" layoutY="17.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../Images/icons8_close_window_26px.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="Hb" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <StackPane fx:id="container" prefHeight="150.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
